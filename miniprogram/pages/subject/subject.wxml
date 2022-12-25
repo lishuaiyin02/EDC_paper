@@ -1,0 +1,10 @@
+<!--pages/subject/subject.wxml-->
+<view>
+  <block wx:for="{{subjects}}" wx:for-item="item" wx:key="key" >
+    <!-- wx:for="{{subjects}}" wx:for-item="item" wx:key="key" -->
+    <button class='add' style="width: 25%;margin-right: 5%;" bindtap="add_subject">新增</button>
+    <view class="subjects" bindtap="entryvisit">
+      <text user-select='true'>{{item.subjn}}</text>
+    </view>
+  </block>
+</view>

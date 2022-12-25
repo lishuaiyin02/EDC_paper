@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/forms/TM1/TM1",
+    "pages/forms/TS1/TS1",
+    "pages/forms/MT/MT",
+    "pages/forms/PC/PC",
+    "pages/forms/PD/PD",
+    "pages/forms/DS/DS",
+    "pages/forms/AE/AE",
+
+    "pages/subject/subject",
+    "pages/login/login",
+    
+    "pages/question/question",
+    "pages/addSubject/addSubject",
+    "pages/visit/visit",
+     
+    "pages/index/index",
+    "pages/getOpenId/index",
+    "pages/getMiniProgramCode/index",
+    "pages/deployService/index",
+    "pages/createCollection/index",
+    "pages/uploadFile/index",
+    "pages/selectRecord/index",
+    "pages/updateRecord/index",
+    "pages/updateRecordResult/index",
+    "pages/updateRecordSuccess/index",
+    "pages/sumRecord/index",
+    "pages/sumRecordResult/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "EDC_Paper",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "lazyCodeLoading": "requiredComponents"
+}

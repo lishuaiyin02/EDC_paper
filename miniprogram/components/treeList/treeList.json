@@ -1,0 +1,4 @@
+{
+	"component": true,
+	"usingComponents": { "treeList":"/components/treeList/treeList" } 
+}

@@ -1,0 +1,18 @@
+<!--components/treeList/treeList.wxml-->
+<view class="treeList c{{step}}">
+    <view class="line" style="margin-left:{{(step-1)*40}}px;"></view>
+    <view class="title" style="margin-left:{{(step-1)*40}}px;">
+        <view class="icon" wx:if="{{listData.children.length>0 && isShowChildren}}" catchtap="toggleShowChildren">-
+        </view>
+        <view class="icon" wx:elif="{{listData.children.length<=0}}">
+            <view class="dot"></view>
+        </view>
+        <view class="icon" wx:else catchtap="toggleShowChildren">+</view>
+        <view class="text" >{{listData.title}}</view>
+    </view>
+    <block wx:if="{{listData.children.length>0&&isShowChildren}}" wx:for="{{listData.children}}" wx:key="index">
+        <treeList listData="{{item}}" step="{{step+1}}"
+            bindtreeListEvent="treeListEvent"></treeList>
+    </block>
+</view>
+

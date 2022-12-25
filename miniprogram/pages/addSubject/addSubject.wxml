@@ -1,0 +1,42 @@
+<!--pages/addSubject/addSubject.wxml-->
+<view>
+    <view class="form">
+        <form bindsubmit='addSubject'>
+            <!--中心号-->
+            <view class="inputView">
+                <label class="Label">中心号</label>
+                <input name="site" value='' class="inputText" placeholder="请输入中心号" />
+            </view>
+            <view class="line"></view>
+
+            <!--受试者编号-->
+            <view class="inputView">
+                <label class="Label">受试者编号</label>
+                <input name="subjid" value='' class="inputText" placeholder="请输入受试者编号" />
+            </view>
+            <view class="line"></view>
+
+            <!--姓名缩写-->
+            <view class="inputView">
+                <label class="Label">姓名缩写</label>
+                <input name="subjn" value='' class="inputText" placeholder="请输入姓名缩写" />
+            </view>
+            <view class="line"></view>
+
+            <!--访视日期-->
+            <view class="inputView">
+                <label class="Label">访视日期</label>
+                <picker class="inputText" mode="date" value="{{date}}" start="2015-09-01" end="2097-09-01" bindchange="bindDateChange">
+                  <view>
+                    <input name="vstd" value= "{{date}}"  placeholder="请选择日期" />
+                  </view>
+                </picker>
+            </view>
+
+            <!--按钮-->
+            <view>
+                <button class="Btn" type="primary" form-type='submit'>提交</button>
+            </view>
+        </form>
+    </view>
+</view>

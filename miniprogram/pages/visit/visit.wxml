@@ -1,0 +1,7 @@
+<!--pages/visit/visit.wxml-->
+<view class="list">
+        <block wx:for="{{listData}}" data-item="item" wx:key="index">
+          <treeList bindtap="showform" data-index="{{item}}"  listData="{{item}}" step="1" ></treeList>
+        </block>
+</view>
+

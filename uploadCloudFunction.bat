@@ -1,0 +1,1 @@
+"D:\software\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-2gmooq1n1ea8b90e --n quickstartFunctions --r --project "D:\project\EDC_paper" --report
